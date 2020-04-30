@@ -11,13 +11,13 @@ This package is inspired by [go-github](https://github.com/google/go-github).
 ## Installation
 
 ```go
-go get github.com/ericyang/go-cwb
+go get github.com/ericyangs/go-cwb
 ```
 
 ## Usage
 
 ```go
-import "github.com/ericyang/go-cwb/cwb"
+import "github.com/ericyangs/go-cwb/cwb"
 ```
 
 You will need an account on [cwb.gov.tw](http://www.cwb.gov.tw/) to get an API key.
