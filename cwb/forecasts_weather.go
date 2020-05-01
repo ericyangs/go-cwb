@@ -136,9 +136,9 @@ type FTWWeatherElement struct {
 }
 
 type FTWTime struct {
-	DataTime     *string           `json:"dataTime,omitempty"`
-	StartTime    *string           `json:"startTime,omitempty"`
-	EndTime      *string           `json:"endTime,omitempty"`
+	DataTime     string           `json:"dataTime,omitempty"`
+	StartTime    string           `json:"startTime,omitempty"`
+	EndTime      string           `json:"endTime,omitempty"`
 	ElementValue []FTWElementValue `json:"elementValue,omitempty"`
 	Parameter    []Parameter       `json:"parameter,omitempty"`
 }
