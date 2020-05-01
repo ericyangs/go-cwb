@@ -26,6 +26,7 @@ client := cwb.NewClient("CWB-3FB0188A-5506-XXXX-B42A-XXXXXXXXXXXX", nil)
 ```
 
 3. 取回氣象資料
+
 取36小時的天氣預報:
 ```go
 forecast, _, err := client.Forecasts.Get36HourWeather(context.Background(), nil, nil)
@@ -56,7 +57,7 @@ senMsg := client.Forecasts.AxiosMsg(forecast)
 ## For example:
 ```go
 	client := cwb.NewClient("CWB-3FB0188A-5506-XXXX-B42A-XXXXXXXXXXXX", nil)
-	forecast, _, err := client.Forecasts.GetTownshipsWeatherByDataId(context.Background(), cwb.FTW2DayTaipeiCity, nil, nil)
+	forecast, _, err := client.Forecasts.Get36HourWeather(context.Background(), nil, nil)
 	if err != nil {
 		fmt.Println(err)
 	}
