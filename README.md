@@ -49,21 +49,22 @@ forecast, _, err := client.Forecasts.GetTownshipsWeatherByDataId(context.Backgro
 ```
 
 
-## 新增 Vue Axios
+## 新增功能
+Vue Axios
 ```go
 senMsg := client.Forecasts.AxiosMsg(forecast)
 ```
 
 ## For example:
 ```go
-	client := cwb.NewClient("CWB-3FB0188A-5506-XXXX-B42A-XXXXXXXXXXXX", nil)
-	forecast, _, err := client.Forecasts.Get36HourWeather(context.Background(), nil, nil)
-	if err != nil {
-		fmt.Println(err)
-	}
+client := cwb.NewClient("CWB-3FB0188A-5506-XXXX-B42A-XXXXXXXXXXXX", nil)
+forecast, _, err := client.Forecasts.Get36HourWeather(context.Background(), nil, nil)
+if err != nil {
+	fmt.Println(err)
+}
 
-	senMsg := client.Forecasts.AxiosMsg(forecast)
-	fmt.Println(string(senMsg))
+senMsg := client.Forecasts.AxiosMsg(forecast)
+fmt.Println(string(senMsg))
 ```
 
 ## Implemented APIs
