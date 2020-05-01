@@ -8,18 +8,19 @@ An unofficial Taiwan [Central Weather Bureau RESTful API](http://opendata.cwb.go
 
 This package is inspired by [go-github](https://github.com/google/go-github).
 
-## Installation
+## 安裝
 
 ```go
-go get github.com/ericyangs/go-cwb
+go get github.com/ericyangs/go-cwb/cwb
 ```
 
-## Usage
+## 使用
 
 ```go
 import "github.com/ericyangs/go-cwb/cwb"
 ```
 
+1. 先到 氣象開發資料平臺[https://opendata.cwb.gov.tw/index] 註冊 取得 API Key
 You will need an account on [cwb.gov.tw](http://www.cwb.gov.tw/) to get an API key.
 
 Construct a new CWB client, then use to access the CWB API.
